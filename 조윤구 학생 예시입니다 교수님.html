@@ -1,0 +1,23 @@
+<body>
+    <script>
+        const animals = ['🐶', '🐱', '🐷'];
+        console.log(animals);
+        console.log(animals.length);
+        console.log(animals[0], animals[2]);
+        console.log(animals[3]); // undefined
+        console.log(animals[animals.length - 1]); // last
+        
+        
+        // 추가 만약 내가 고양이라는 이모티콘은 알지만 고양이가 몇번째 인덱스인지 모를경우 적용 하는 방법
+        // indexof을 사용한다.
+        console.log(animals.indexOf('🐱'));
+        delete animals[animals.indexOf('🐱')];
+        
+        
+        
+        //1 번 고양이 제거 delete (허나 공간은 남아 있게 된다.)
+        // delete animals[1];
+        console.log(animals);
+
+    </script>
+</body>
